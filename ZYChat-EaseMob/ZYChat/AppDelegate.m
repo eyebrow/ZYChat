@@ -13,8 +13,7 @@
 #import "HALoginViewController.h"
 #import "BTTabBarRootController.h"
 #import "EaseMob.h"
-
-#define EaseMobAppKey     @"zyprosoft#zychat"
+#import "Header.h"
 
 @interface AppDelegate ()
 
@@ -31,7 +30,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     //注册环信
-    [[EaseMob sharedInstance] registerSDKWithAppKey:EaseMobAppKey  apnsCertName:@"zychat_apns"];
+    [[EaseMob sharedInstance] registerSDKWithAppKey:EaseMobAppKey  apnsCertName:apnsCertNameString];
     
     HALoginViewController *loginVC = [[HALoginViewController alloc]init];
     loginVC.title = @"iOS码农之家";

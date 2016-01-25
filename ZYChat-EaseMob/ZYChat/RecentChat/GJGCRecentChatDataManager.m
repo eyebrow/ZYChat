@@ -271,6 +271,7 @@
             GJGCMessageExtendGroupModel *groupInfo = [self groupInfoFromMessage:lastMessage];
             
             if (lastMessage && groupInfo && [groupInfo toDictionary].count > 0) {
+                
                 chatModel.name = [GJGCRecentChatStyle formateName:groupInfo.groupName];
                 chatModel.headUrl = groupInfo.groupHeadThumb;
                 chatModel.groupInfo = groupInfo;

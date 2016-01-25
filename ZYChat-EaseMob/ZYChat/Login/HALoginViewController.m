@@ -84,6 +84,14 @@
     [txtUser.leftView addSubview:imgUser];
     [vLogin addSubview:txtUser];
     
+    //获取本地缓存的用户名
+    NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
+    if (!userDef) {
+        NSString *userName = [userDef objectForKey:@"userName"];
+        txtUser.text = userName;
+    }
+    
+    
     txtPwd = [[UITextField alloc] initWithFrame:CGRectMake(15, 61, vLogin.frame.size.width - 30, 36)];
     txtPwd.delegate = self;
     txtPwd.layer.cornerRadius = 5;
@@ -232,12 +240,25 @@
     [[ZYUserCenter shareCenter] LoginUserWithMobile:txtUser.text withPassword:txtPwd.text withSuccess:^(NSString *message) {
         
         [self.statusHUD dismiss];
+        [self saveOrUpdateUserInfo];
         
     } withFaild:^(NSError *error) {
         
         [self.statusHUD dismiss];
 
     }];
+}
+
+- (void) saveOrUpdateUserInfo{
+    
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"userName"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
+    if ( !userDef ){
+        [userDef setObject:txtUser.text forKey:@"userName"];
+        [userDef synchronize];
+    }
 }
 
 @end

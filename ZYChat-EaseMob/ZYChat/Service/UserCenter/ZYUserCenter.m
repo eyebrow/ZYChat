@@ -58,9 +58,10 @@
     return self.innerLoginUser;
 }
 
+//自动登录
 - (BOOL)isLogin
 {
-    return self.innerLoginUser? YES:NO;
+    return self.innerLoginUser? NO:YES;
 }
 
 - (NSString *)userSavePath:(NSString *)userId
@@ -185,7 +186,7 @@
                 self.innerLoginUser = [[ZYUserModel alloc]init];
                 self.innerLoginUser.name = mobile;
                 NSString *timeString = GJCFStringCurrentTimeStamp;
-                self.innerLoginUser.nickname = [NSString stringWithFormat:@"至尊宝%@",[timeString substringFromIndex:timeString.length-4]];
+                self.innerLoginUser.nickname = [NSString stringWithFormat:@"%@",[timeString substringFromIndex:timeString.length-4]];
                 self.innerLoginUser.headThumb = @"http://imgsrc.baidu.com/forum/pic/item/9d82d158ccbf6c81f34d2e53bc3eb13533fa4016.jpg";
                 self.innerLoginUser.sex = @"0";
             }

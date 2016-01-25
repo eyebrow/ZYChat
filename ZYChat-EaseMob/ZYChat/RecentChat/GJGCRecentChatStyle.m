@@ -16,7 +16,11 @@
     GJCFCoreTextAttributedStringStyle *stringStyle = [[GJCFCoreTextAttributedStringStyle alloc]init];
     stringStyle.foregroundColor = [GJGCCommonFontColorStyle listTitleAndDetailTextColor];
     stringStyle.font = [UIFont boldSystemFontOfSize:16];
-    
+
+#warning error bug:name 为nil
+    if(name == nil){
+        name = @"测试";
+    }
     return [[NSAttributedString alloc]initWithString:name attributes:[stringStyle attributedDictionary]];
 }
 

@@ -1,0 +1,42 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4389EE8BAF8149D9632E5FC6926A6FF0F3B5F7F4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "78cbbb63-b040-e643-bc3b-43c875367474++7123" : {
+
+    },
+    "c1b34985-89f7-4ad2-b6ed-32456ccb691a++8605" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "78cbbb63-b040-e643-bc3b-43c875367474++7123" : 0,
+    "c1b34985-89f7-4ad2-b6ed-32456ccb691a++8605" : 0,
+    "4389EE8BAF8149D9632E5FC6926A6FF0F3B5F7F4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EEA4F662-B2E4-4ABC-B293-1C2634446813",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "78cbbb63-b040-e643-bc3b-43c875367474++7123" : "ZYChat\/ZYChat-EaseMob\/ZYChat\/MainTab\/",
+    "c1b34985-89f7-4ad2-b6ed-32456ccb691a++8605" : "ZYChat\/ZYChat-EaseMob\/ZYChat\/Dependcy\/GJCUCapture\/",
+    "4389EE8BAF8149D9632E5FC6926A6FF0F3B5F7F4" : "ZYChat\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ZYChat",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ZYChat-EaseMob\/ZYChat.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mrhyh\/ZYChat.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4389EE8BAF8149D9632E5FC6926A6FF0F3B5F7F4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.5\/svn\/baby",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "78cbbb63-b040-e643-bc3b-43c875367474++7123"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.64.5:8888\/svn\/Mobile",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c1b34985-89f7-4ad2-b6ed-32456ccb691a++8605"
+    }
+  ]
+}
