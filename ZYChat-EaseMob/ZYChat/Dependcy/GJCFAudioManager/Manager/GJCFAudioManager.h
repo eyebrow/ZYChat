@@ -169,4 +169,9 @@ typedef void (^GJCFAudioManagerUploadCompletionBlock) (NSString *audioLocalPath,
 /* 观察录音失败 */
 - (void)setRecrodFaildBlock:(GJCFAudioManagerRecordFaildBlock)faildRecordBlock;
 
+int *test(int a);
+
+
+
+
 @end

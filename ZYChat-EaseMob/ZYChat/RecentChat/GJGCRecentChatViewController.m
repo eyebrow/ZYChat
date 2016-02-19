@@ -4,7 +4,7 @@
 //
 //  Created by ZYVincent QQ:1003081775 on 15/7/11.
 //  Copyright (c) 2015年 ZYProSoft.  QQ群:219357847  All rights reserved.
-//
+//  消息栏主控制器
 
 #import "GJGCRecentChatViewController.h"
 #import "GJGCRecentChatCell.h"
@@ -29,7 +29,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
     
     self.dataManager = [[GJGCRecentChatDataManager alloc]init];
     self.dataManager.delegate = self;
@@ -40,6 +39,7 @@
     self.titleView.connectState = result;
     
     self.listTable = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, GJCFSystemScreenWidth, GJCFSystemScreenHeight - self.tabBarController.tabBar.gjcf_height - self.contentOriginY) style:UITableViewStylePlain];
+    //self.listTable.backgroundColor = [UIColor grayColor];
     self.listTable.delegate = self;
     self.listTable.dataSource = self;
     self.listTable.separatorStyle = UITableViewCellSeparatorStyleNone;

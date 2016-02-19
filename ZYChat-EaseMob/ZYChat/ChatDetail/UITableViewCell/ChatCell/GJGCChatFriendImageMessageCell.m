@@ -14,7 +14,6 @@
 
 @implementation GJGCChatFriendImageMessageCell
 
-
 #pragma mark - 初始化
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

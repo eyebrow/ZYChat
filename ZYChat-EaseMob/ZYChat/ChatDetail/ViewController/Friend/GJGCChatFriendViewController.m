@@ -1271,6 +1271,8 @@ static NSString * const GJGCActionSheetAssociateKey = @"GJIMSimpleCellActionShee
                     
                     [imageCell successDownloadWithImageData:[NSData dataWithContentsOfFile:imageMessageBody.thumbnailLocalPath]];
                     
+                    UIImage *testImage = [UIImage imageWithData:[NSData dataWithContentsOfFile:imageMessageBody.thumbnailLocalPath]];
+                    
                 }
             }
         }

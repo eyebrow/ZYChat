@@ -1099,6 +1099,7 @@
 - (EMMessage *)sendImageMessage:(GJGCChatFriendContentModel *)messageContent
 {
     NSString *filePath = [[GJCFCachePathManager shareManager]mainImageCacheFilePath:messageContent.imageLocalCachePath];
+    
     EMChatImage *imgChat = [[EMChatImage alloc] initWithUIImage:[UIImage imageWithContentsOfFile:filePath] displayName:@"[图片]"];
     EMImageMessageBody *body = [[EMImageMessageBody alloc] initWithChatObject:imgChat];
     

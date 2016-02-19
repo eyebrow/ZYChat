@@ -650,6 +650,13 @@
         self.recordFaildBlock = nil;
     }
     self.recordFaildBlock = faildRecordBlock;
+    
+    void (^test)(int a) = ^(int a){
+        
+    };
+    
+    
+   
 }
 
 /* 清除当前所有观察block */

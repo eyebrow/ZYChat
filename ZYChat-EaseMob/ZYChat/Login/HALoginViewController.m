@@ -239,6 +239,7 @@
     [self.statusHUD showWithStatusText:@"正在登录..."];
     [[ZYUserCenter shareCenter] LoginUserWithMobile:txtUser.text withPassword:txtPwd.text withSuccess:^(NSString *message) {
         
+        [self performSelector:@selector(delayMethod) withObject:nil afterDelay:1.0f];
         [self.statusHUD dismiss];
         [self saveOrUpdateUserInfo];
         

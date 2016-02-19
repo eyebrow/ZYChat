@@ -82,7 +82,6 @@
     [self setBackgroundColor:GJCFQuickHexColor(@"f3f3f3")];
     
     /* 录音按钮 */
-
     UIImage *recordIcon = GJCFQuickImage(@"聊天-icon-语音及切换键盘-灰");
     UIImage *keybordIcon = GJCFQuickImage(@"聊天-icon-文字键盘");
     self.recordAudioBarItem = [[GJGCChatInputBarItem alloc]initWithSelectedIcon:keybordIcon withNormalIcon:recordIcon];
@@ -149,6 +148,7 @@
     [self.inputTextView setPreRecordTitle:@"按住说话"];
     [self.inputTextView setRecordingTitle:@"松开结束"];
     self.inputTextView.gjcf_centerY = self.barHeight/2;
+    
     [self.inputTextView configFinishInputTextBlock:^(GJGCChatInputTextView *textView, NSString *text) {
         if (weakSelf.textSendBlock) {
             weakSelf.textSendBlock(weakSelf,text);
